@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		D830BC2C2CF7C2310005A5F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D830BC132CF7C2300005A5F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D830BC1A2CF7C2300005A5F5;
+			remoteInfo = FlorescerApp;
+		};
+		D830BC362CF7C2310005A5F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D830BC132CF7C2300005A5F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D830BC1A2CF7C2300005A5F5;
+			remoteInfo = FlorescerApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D830BC1B2CF7C2300005A5F5 /* FlorescerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlorescerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D830BC2B2CF7C2310005A5F5 /* FlorescerAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlorescerAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D830BC352CF7C2310005A5F5 /* FlorescerAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlorescerAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		D830BC1D2CF7C2300005A5F5 /* FlorescerApp */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = FlorescerApp;
+			sourceTree = "<group>";
+		};
+		D830BC2E2CF7C2310005A5F5 /* FlorescerAppTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = FlorescerAppTests;
+			sourceTree = "<group>";
+		};
+		D830BC382CF7C2310005A5F5 /* FlorescerAppUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = FlorescerAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D830BC182CF7C2300005A5F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D830BC282CF7C2310005A5F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D830BC322CF7C2310005A5F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D830BC122CF7C2300005A5F5 = {
+			isa = PBXGroup;
+			children = (
+				D830BC1D2CF7C2300005A5F5 /* FlorescerApp */,
+				D830BC2E2CF7C2310005A5F5 /* FlorescerAppTests */,
+				D830BC382CF7C2310005A5F5 /* FlorescerAppUITests */,
+				D830BC1C2CF7C2300005A5F5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D830BC1C2CF7C2300005A5F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D830BC1B2CF7C2300005A5F5 /* FlorescerApp.app */,
+				D830BC2B2CF7C2310005A5F5 /* FlorescerAppTests.xctest */,
+				D830BC352CF7C2310005A5F5 /* FlorescerAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D830BC1A2CF7C2300005A5F5 /* FlorescerApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D830BC3F2CF7C2310005A5F5 /* Build configuration list for PBXNativeTarget "FlorescerApp" */;
+			buildPhases = (
+				D830BC172CF7C2300005A5F5 /* Sources */,
+				D830BC182CF7C2300005A5F5 /* Frameworks */,
+				D830BC192CF7C2300005A5F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				D830BC1D2CF7C2300005A5F5 /* FlorescerApp */,
+			);
+			name = FlorescerApp;
+			packageProductDependencies = (
+			);
+			productName = FlorescerApp;
+			productReference = D830BC1B2CF7C2300005A5F5 /* FlorescerApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D830BC2A2CF7C2310005A5F5 /* FlorescerAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D830BC422CF7C2310005A5F5 /* Build configuration list for PBXNativeTarget "FlorescerAppTests" */;
+			buildPhases = (
+				D830BC272CF7C2310005A5F5 /* Sources */,
+				D830BC282CF7C2310005A5F5 /* Frameworks */,
+				D830BC292CF7C2310005A5F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D830BC2D2CF7C2310005A5F5 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				D830BC2E2CF7C2310005A5F5 /* FlorescerAppTests */,
+			);
+			name = FlorescerAppTests;
+			packageProductDependencies = (
+			);
+			productName = FlorescerAppTests;
+			productReference = D830BC2B2CF7C2310005A5F5 /* FlorescerAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D830BC342CF7C2310005A5F5 /* FlorescerAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D830BC452CF7C2310005A5F5 /* Build configuration list for PBXNativeTarget "FlorescerAppUITests" */;
+			buildPhases = (
+				D830BC312CF7C2310005A5F5 /* Sources */,
+				D830BC322CF7C2310005A5F5 /* Frameworks */,
+				D830BC332CF7C2310005A5F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D830BC372CF7C2310005A5F5 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				D830BC382CF7C2310005A5F5 /* FlorescerAppUITests */,
+			);
+			name = FlorescerAppUITests;
+			packageProductDependencies = (
+			);
+			productName = FlorescerAppUITests;
+			productReference = D830BC352CF7C2310005A5F5 /* FlorescerAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D830BC132CF7C2300005A5F5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					D830BC1A2CF7C2300005A5F5 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					D830BC2A2CF7C2310005A5F5 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = D830BC1A2CF7C2300005A5F5;
+					};
+					D830BC342CF7C2310005A5F5 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = D830BC1A2CF7C2300005A5F5;
+					};
+				};
+			};
+			buildConfigurationList = D830BC162CF7C2300005A5F5 /* Build configuration list for PBXProject "FlorescerApp" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D830BC122CF7C2300005A5F5;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = D830BC1C2CF7C2300005A5F5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D830BC1A2CF7C2300005A5F5 /* FlorescerApp */,
+				D830BC2A2CF7C2310005A5F5 /* FlorescerAppTests */,
+				D830BC342CF7C2310005A5F5 /* FlorescerAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D830BC192CF7C2300005A5F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D830BC292CF7C2310005A5F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D830BC332CF7C2310005A5F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D830BC172CF7C2300005A5F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D830BC272CF7C2310005A5F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D830BC312CF7C2310005A5F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D830BC2D2CF7C2310005A5F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D830BC1A2CF7C2300005A5F5 /* FlorescerApp */;
+			targetProxy = D830BC2C2CF7C2310005A5F5 /* PBXContainerItemProxy */;
+		};
+		D830BC372CF7C2310005A5F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D830BC1A2CF7C2300005A5F5 /* FlorescerApp */;
+			targetProxy = D830BC362CF7C2310005A5F5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D830BC3D2CF7C2310005A5F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D830BC3E2CF7C2310005A5F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D830BC402CF7C2310005A5F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FlorescerApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "hello-world.FlorescerApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D830BC412CF7C2310005A5F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FlorescerApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "hello-world.FlorescerApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D830BC432CF7C2310005A5F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "hello-world.FlorescerAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlorescerApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FlorescerApp";
+			};
+			name = Debug;
+		};
+		D830BC442CF7C2310005A5F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "hello-world.FlorescerAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlorescerApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FlorescerApp";
+			};
+			name = Release;
+		};
+		D830BC462CF7C2310005A5F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "hello-world.FlorescerAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FlorescerApp;
+			};
+			name = Debug;
+		};
+		D830BC472CF7C2310005A5F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "hello-world.FlorescerAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FlorescerApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D830BC162CF7C2300005A5F5 /* Build configuration list for PBXProject "FlorescerApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D830BC3D2CF7C2310005A5F5 /* Debug */,
+				D830BC3E2CF7C2310005A5F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D830BC3F2CF7C2310005A5F5 /* Build configuration list for PBXNativeTarget "FlorescerApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D830BC402CF7C2310005A5F5 /* Debug */,
+				D830BC412CF7C2310005A5F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D830BC422CF7C2310005A5F5 /* Build configuration list for PBXNativeTarget "FlorescerAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D830BC432CF7C2310005A5F5 /* Debug */,
+				D830BC442CF7C2310005A5F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D830BC452CF7C2310005A5F5 /* Build configuration list for PBXNativeTarget "FlorescerAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D830BC462CF7C2310005A5F5 /* Debug */,
+				D830BC472CF7C2310005A5F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D830BC132CF7C2300005A5F5 /* Project object */;
+}
