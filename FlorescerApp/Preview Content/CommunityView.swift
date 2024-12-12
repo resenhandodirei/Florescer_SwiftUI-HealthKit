@@ -17,7 +17,6 @@ struct CommunityView: View {
     
     var body: some View {
         ZStack {
-            // Fundo gradiente
             LinearGradient(
                 gradient: Gradient(colors: [Color("yellowwTertiary"), Color("greenPrimary")]),
                 startPoint: .topLeading,
@@ -26,20 +25,17 @@ struct CommunityView: View {
             .ignoresSafeArea()
             
             VStack(spacing: 20) {
-                // Título
                 Text("Comunidade")
                     .font(.system(size: 28, weight: .bold))
                     .foregroundColor(Color("greenPrimary"))
                     .padding(.top, 20)
                 
-                // Subtítulo
                 Text("Conecte-se com outras pessoas e compartilhe sua jornada de autocuidado.")
                     .font(.system(size: 16, weight: .regular))
                     .foregroundColor(Color("orangeSecondary"))
                     .multilineTextAlignment(.center)
                     .padding(.horizontal, 20)
                 
-                // Lista de mensagens da comunidade
                 ScrollView {
                     VStack(alignment: .leading, spacing: 15) {
                         ForEach(messages, id: \.self) { message in
@@ -54,7 +50,6 @@ struct CommunityView: View {
                                             .foregroundColor(.white)
                                     )
                                 
-                                // Mensagem do usuário
                                 VStack(alignment: .leading, spacing: 5) {
                                     Text("Usuário Anônimo")
                                         .font(.system(size: 14, weight: .bold))
@@ -81,7 +76,6 @@ struct CommunityView: View {
                 
                 Spacer()
                 
-                // Campo de texto para nova mensagem
                 VStack(spacing: 10) {
                     HStack {
                         TextField("Compartilhe algo inspirador...", text: $userMessage)
@@ -92,7 +86,6 @@ struct CommunityView: View {
                                     .shadow(color: Color.black.opacity(0.2), radius: 5, x: 0, y: 5)
                             )
                         
-                        // Botão de enviar
                         Button(action: {
                             sendMessage()
                         }) {

@@ -8,13 +8,12 @@
 import SwiftUI
 
 struct NutritionView: View {
-    @State private var totalCalories: Double = 0.0 // Total de calorias consumidas no dia
+    @State private var totalCalories: Double = 0.0 
     @State private var meals: [Meal] = [] // Lista de refeições registradas
     @State private var showAddMealSheet = false
 
     var body: some View {
         ZStack {
-            // Fundo gradiente
             LinearGradient(
                 gradient: Gradient(colors: [Color("greenPrimary"), Color("yellowwTertiary")]),
                 startPoint: .top,
@@ -23,19 +22,16 @@ struct NutritionView: View {
             .ignoresSafeArea()
 
             VStack(spacing: 20) {
-                // Título
                 Text("Alimentação")
                     .font(.system(size: 28, weight: .bold))
                     .foregroundColor(Color("orangeSecondary"))
                     .padding(.top, 20)
 
-                // Subtítulo
                 Text("Acompanhe suas refeições e calorias diárias")
                     .font(.system(size: 18, weight: .medium))
                     .foregroundColor(Color("orangeSecondary"))
                     .multilineTextAlignment(.center)
 
-                // Total de calorias
                 VStack {
                     Text("\(Int(totalCalories)) kcal")
                         .font(.system(size: 36, weight: .bold))
@@ -52,7 +48,6 @@ struct NutritionView: View {
                 )
                 .padding(.horizontal)
 
-                // Lista de refeições
                 List {
                     ForEach(meals) { meal in
                         HStack {
@@ -77,7 +72,6 @@ struct NutritionView: View {
 
                 Spacer()
 
-                // Botão para adicionar refeições
                 Button(action: { showAddMealSheet.toggle() }) {
                     Text("Adicionar Refeição")
                         .font(.system(size: 18, weight: .bold))

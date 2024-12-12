@@ -14,10 +14,10 @@ struct NotificationsView: View {
     @State private var meditationReminder: Bool = false
     @State private var customReminderText: String = ""
     @State private var customReminderTime: Date = Date()
-    
+    @State private var showConfirmationAlert: Bool = false
+
     var body: some View {
         ZStack {
-            // Fundo gradiente
             LinearGradient(
                 gradient: Gradient(colors: [Color("greenPrimary"), Color("yellowwTertiary")]),
                 startPoint: .topLeading,
@@ -26,7 +26,6 @@ struct NotificationsView: View {
             .ignoresSafeArea()
             
             VStack(spacing: 20) {
-                // Título da tela
                 Text("Notificações e Lembretes")
                     .font(.system(size: 28, weight: .bold))
                     .foregroundColor(Color("orangeSecondary"))
@@ -34,7 +33,6 @@ struct NotificationsView: View {
                 
                 ScrollView {
                     VStack(spacing: 20) {
-                        // Configuração de lembrete diário
                         Toggle("Lembrete Diário", isOn: $isDailyReminderEnabled)
                             .font(.system(size: 18, weight: .medium))
                             .padding()
@@ -65,7 +63,6 @@ struct NotificationsView: View {
                             .padding(.horizontal, 20)
                         }
                         
-                        // Lembretes específicos
                         Toggle("Lembrete para Hidratação", isOn: $hydrationReminder)
                             .font(.system(size: 18, weight: .medium))
                             .padding()
@@ -86,7 +83,6 @@ struct NotificationsView: View {
                             )
                             .padding(.horizontal, 20)
                         
-                        // Lembrete personalizado
                         VStack(alignment: .leading, spacing: 10) {
                             Text("Lembrete Personalizado")
                                 .font(.system(size: 18, weight: .medium))
@@ -118,10 +114,9 @@ struct NotificationsView: View {
                 
                 Spacer()
                 
-                // Botão para salvar alterações
                 Button(action: {
-                    // Salvar configurações de notificações
                     saveNotificationSettings()
+                    showConfirmationAlert = true
                 }) {
                     Text("Salvar Configurações")
                         .font(.system(size: 18, weight: .bold))
@@ -134,12 +129,18 @@ struct NotificationsView: View {
                 }
                 .padding(.horizontal, 20)
                 .padding(.bottom, 30)
+                .alert(isPresented: $showConfirmationAlert) {
+                    Alert(
+                        title: Text("Configurações Salvas!"),
+                        message: Text("As configurações de notificações foram atualizadas com sucesso."),
+                        dismissButton: .default(Text("OK"))
+                    )
+                }
             }
         }
     }
     
     private func saveNotificationSettings() {
-        // Implementar a lógica de salvar configurações de notificações
         print("Configurações salvas!")
     }
 }

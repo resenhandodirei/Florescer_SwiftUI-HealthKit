@@ -8,13 +8,12 @@ import SwiftUI
 import HealthKit
 
 struct SleepTrackingView: View {
-    @State private var sleepHours: [Double] = [7.0, 6.5, 8.0, 5.5, 7.2] // Simulação de dados
+    @State private var sleepHours: [Double] = [7.0, 6.5, 8.0, 5.5, 7.2]
     @State private var averageSleep: Double = 0.0
     @State private var insights: String = "Durma mais cedo para melhorar sua qualidade de sono."
 
     var body: some View {
         ZStack {
-            // Fundo gradiente
             LinearGradient(
                 gradient: Gradient(colors: [Color("greenPrimary"), Color("yellowwTertiary")]),
                 startPoint: .top,
@@ -35,12 +34,10 @@ struct SleepTrackingView: View {
                     .foregroundColor(Color("offWhite"))
                     .multilineTextAlignment(.center)
 
-                // Gráfico Simples de Histórico de Sono
                 SleepBarChartView(sleepHours: sleepHours)
                     .frame(height: 200)
                     .padding(.vertical, 20)
 
-                // Dados Resumidos
                 VStack(spacing: 10) {
                     HStack {
                         Text("Média de horas dormidas:")

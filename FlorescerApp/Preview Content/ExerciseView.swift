@@ -18,14 +18,12 @@ struct ExerciseView: View {
     
     var body: some View {
         ZStack {
-            // Fundo com gradiente
             LinearGradient(gradient: Gradient(colors: [Color("offWhite"), Color("yellowwTertiary")]),
                            startPoint: .top,
                            endPoint: .bottom)
                 .ignoresSafeArea()
             
             VStack(alignment: .leading, spacing: 20) {
-                // Título e Introdução
                 VStack(alignment: .leading, spacing: 8) {
                     Text("Exercícios Físicos")
                         .font(.largeTitle)
@@ -39,7 +37,6 @@ struct ExerciseView: View {
                 .padding(.horizontal, 20)
                 .padding(.top, 40)
                 
-                // Barra de Busca
                 HStack {
                     TextField("Buscar exercícios...", text: $searchText)
                         .padding(10)
@@ -57,7 +54,6 @@ struct ExerciseView: View {
                 }
                 .padding(.horizontal, 20)
                 
-                // Categorias de Exercício
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 10) {
                         ForEach(["Relaxamento", "Cardio", "Força", "Alongamento"], id: \.self) { category in
@@ -76,7 +72,6 @@ struct ExerciseView: View {
                     .padding(.horizontal, 20)
                 }
                 
-                // Lista de Exercícios
                 ScrollView {
                     VStack(spacing: 15) {
                         ForEach(filteredExercises, id: \.id) { exercise in
@@ -102,7 +97,6 @@ struct ExerciseView: View {
                                 Spacer()
                                 
                                 Button(action: {
-                                    // Ação para iniciar o exercício
                                 }) {
                                     Image(systemName: "play.fill")
                                         .foregroundColor(.white)

@@ -15,10 +15,12 @@ struct HabitDetailView: View {
         frequency: ["Seg", "Ter", "Qua", "Qui", "Sex", "Sáb", "Dom"]
     )
     @State private var remindersEnabled = false
-    
+    @State private var showCompletionAlert = false
+    @State private var showEditAlert = false
+    @State private var editedName = ""
+    @State private var editedDescription = ""
     var body: some View {
         ZStack {
-            // Fundo com gradiente
             LinearGradient(gradient: Gradient(colors: [Color("offWhite"), Color("yellowwTertiary")]),
                            startPoint: .top,
                            endPoint: .bottom)
@@ -26,20 +28,25 @@ struct HabitDetailView: View {
             
             ScrollView {
                 VStack(spacing: 20) {
-                    // Título e Descrição
                     VStack(alignment: .leading, spacing: 8) {
-                        Text(habit.name)
+                        TextField("Nome do Hábito", text: $editedName)
                             .font(.title)
                             .fontWeight(.bold)
                             .foregroundColor(Color("greenPrimary"))
-                        
-                        Text(habit.description)
+                            .padding(.horizontal, 20)
+                            .onAppear {
+                                editedName = habit.name
+                            }
+
+                        TextField("Descrição do Hábito", text: $editedDescription)
                             .font(.body)
                             .foregroundColor(Color("orangeSecondary"))
+                            .padding(.horizontal, 20)
+                            .onAppear {
+                                editedDescription = habit.description
+                            }
                     }
-                    .padding(.horizontal, 20)
-                    
-                    // Estatísticas de Progresso
+
                     VStack(spacing: 15) {
                         Text("Progresso Semanal")
                             .font(.headline)
@@ -55,7 +62,6 @@ struct HabitDetailView: View {
                             .foregroundColor(Color("orangeSecondary"))
                     }
                     
-                    // Frequência Semanal
                     VStack(alignment: .leading, spacing: 10) {
                         Text("Frequência Semanal")
                             .font(.headline)
@@ -77,7 +83,6 @@ struct HabitDetailView: View {
                     }
                     .padding(.horizontal, 20)
                     
-                    // Configurações
                     VStack(alignment: .leading, spacing: 15) {
                         Toggle(isOn: $remindersEnabled) {
                             Text("Ativar lembretes")
@@ -87,7 +92,7 @@ struct HabitDetailView: View {
                         .toggleStyle(SwitchToggleStyle(tint: Color("greenPrimary")))
                         
                         Button(action: {
-                            // Ação para editar hábito
+                            showEditAlert.toggle()
                         }) {
                             Text("Editar Hábito")
                                 .font(.headline)
@@ -101,7 +106,6 @@ struct HabitDetailView: View {
                     }
                     .padding(.horizontal, 20)
                     
-                    // Histórico
                     VStack(alignment: .leading, spacing: 15) {
                         Text("Histórico")
                             .font(.headline)
@@ -132,11 +136,10 @@ struct HabitDetailView: View {
                     
                     Spacer()
                     
-                    // Botão de Conclusão
                     Button(action: {
-                        // Ação para concluir hábito
+                        showCompletionAlert.toggle()
                     }) {
-                        Text("Marcar como Concluído")
+                        Text("Concluído")
                             .font(.headline)
                             .foregroundColor(.white)
                             .padding()
@@ -147,6 +150,28 @@ struct HabitDetailView: View {
                     }
                     .padding(.horizontal, 20)
                     .padding(.bottom, 30)
+                    .alert(isPresented: $showCompletionAlert) {
+                        Alert(
+                            title: Text("Confirmar Conclusão"),
+                            message: Text("Tem certeza de que deseja marcar este hábito como concluído?"),
+                            primaryButton: .destructive(Text("Sim")) {
+                                print("Hábito concluído!")
+                            },
+                            secondaryButton: .cancel()
+                        )
+                    }
+                    .alert(isPresented: $showEditAlert) {
+                        Alert(
+                            title: Text("Editar Hábito"),
+                            message: Text("Você deseja salvar as alterações?"),
+                            primaryButton: .default(Text("Salvar")) {
+                                habit.name = editedName
+                                habit.description = editedDescription
+                                print("Hábito editado: \(habit.name) - \(habit.description)")
+                            },
+                            secondaryButton: .cancel()
+                        )
+                    }
                 }
             }
         }

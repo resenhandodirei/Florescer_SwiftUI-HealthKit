@@ -17,14 +17,12 @@ struct HabitsView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                // Fundo com gradiente
                 LinearGradient(gradient: Gradient(colors: [Color("offWhite"), Color("yellowwTertiary")]),
                                startPoint: .top,
                                endPoint: .bottom)
                     .ignoresSafeArea()
                 
                 VStack(spacing: 20) {
-                    // Título e descrição
                     VStack(alignment: .leading, spacing: 5) {
                         Text("Monitoramento de Hábitos")
                             .font(.title)
@@ -38,7 +36,6 @@ struct HabitsView: View {
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(.horizontal, 20)
                     
-                    // Lista de hábitos
                     ScrollView {
                         VStack(spacing: 15) {
                             ForEach(habits.indices, id: \.self) { index in
@@ -48,7 +45,6 @@ struct HabitsView: View {
                         .padding(.horizontal, 20)
                     }
                     
-                    // Indicador de progresso
                     VStack(spacing: 10) {
                         Text("Seu progresso diário")
                             .font(.headline)
@@ -66,9 +62,7 @@ struct HabitsView: View {
                     
                     Spacer()
                     
-                    // Botão para adicionar hábitos
                     Button(action: {
-                        // Ação para adicionar novo hábito
                     }) {
                         Text("Adicionar Novo Hábito")
                             .font(.headline)

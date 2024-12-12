@@ -13,7 +13,6 @@ struct HydrationView: View {
 
     var body: some View {
         ZStack {
-            // Fundo gradiente
             LinearGradient(
                 gradient: Gradient(colors: [Color("yellowwTertiary"), Color("greenPrimary")]),
                 startPoint: .top,
@@ -22,24 +21,20 @@ struct HydrationView: View {
             .ignoresSafeArea()
 
             VStack(spacing: 20) {
-                // Título
                 Text("Hidratação")
                     .font(.system(size: 28, weight: .bold))
                     .foregroundColor(Color("greenPrimary"))
                     .padding(.top, 20)
 
-                // Subtítulo
                 Text("Acompanhe seu consumo diário de água")
                     .font(.system(size: 18, weight: .medium))
                     .foregroundColor(Color("orangeSecondary"))
                     .multilineTextAlignment(.center)
 
-                // Gráfico Circular de Progresso
                 HydrationProgressView(waterConsumed: waterConsumed, waterGoal: waterGoal)
                     .frame(height: 200)
                     .padding(.vertical, 20)
 
-                // Resumo de Consumo
                 VStack(spacing: 10) {
                     HStack {
                         Text("Água consumida:")
@@ -69,7 +64,6 @@ struct HydrationView: View {
                 )
                 .padding(.horizontal)
 
-                // Botões
                 HStack(spacing: 20) {
                     Button(action: { waterConsumed += 0.25 }) {
                         Text("+ 250 ml")
@@ -103,7 +97,6 @@ struct HydrationView: View {
     }
 }
 
-// Subview: Gráfico de Progresso
 struct HydrationProgressView: View {
     var waterConsumed: Double
     var waterGoal: Double
@@ -134,7 +127,6 @@ struct HydrationProgressView: View {
     }
 }
 
-// Subview: Configuração de Lembretes
 struct ReminderSetupView: View {
     @State private var selectedTime = Date()
 
@@ -153,7 +145,6 @@ struct ReminderSetupView: View {
                 Spacer()
 
                 Button(action: {
-                    // Ação para salvar o lembrete
                 }) {
                     Text("Salvar Lembrete")
                         .font(.system(size: 18, weight: .bold))

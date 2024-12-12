@@ -31,7 +31,6 @@ struct WeeklyReportsView: View {
     
     var body: some View {
         ZStack {
-            // Fundo gradiente
             LinearGradient(
                 gradient: Gradient(colors: [Color("greenPrimary"), Color("yellowwTertiary")]),
                 startPoint: .top,
@@ -40,19 +39,16 @@ struct WeeklyReportsView: View {
             .ignoresSafeArea()
 
             VStack(spacing: 20) {
-                // Título
                 Text("Relatórios Semanais")
                     .font(.system(size: 28, weight: .bold))
                     .foregroundColor(Color("orangeSecondary"))
                     .padding(.top, 20)
 
-                // Subtítulo
                 Text("Veja seu progresso na semana")
                     .font(.system(size: 18, weight: .medium))
                     .foregroundColor(Color("yellowwTertiary"))
                     .multilineTextAlignment(.center)
 
-                // Gráfico de hidratação
                 VStack {
                     Text("Consumo de Água (Litros)")
                         .font(.system(size: 16, weight: .bold))
@@ -76,7 +72,6 @@ struct WeeklyReportsView: View {
                 )
                 .padding(.horizontal)
 
-                // Gráfico de passos
                 VStack {
                     Text("Passos Dados")
                         .font(.system(size: 16, weight: .bold))

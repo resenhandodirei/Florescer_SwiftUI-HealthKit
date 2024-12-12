@@ -15,14 +15,12 @@ struct DashboardView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                // Fundo com gradiente
                 LinearGradient(gradient: Gradient(colors: [Color("offWhite"), Color("yellowwTertiary")]),
                                startPoint: .top,
                                endPoint: .bottom)
                     .ignoresSafeArea()
                 
                 VStack(spacing: 20) {
-                    // Saudação
                     VStack(alignment: .leading, spacing: 5) {
                         Text("Olá, Larissa!")
                             .font(.title)
@@ -36,7 +34,6 @@ struct DashboardView: View {
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(.horizontal, 20)
                     
-                    // Resumo de saúde
                     HStack(spacing: 20) {
                         SummaryCardView(iconName: "drop.fill",
                                         title: "Água",
@@ -65,15 +62,13 @@ struct DashboardView: View {
                             .fill(Color.white)
                             .frame(height: 200)
                             .cornerRadius(10)
-                            .shadow(color: Color.black.opacity(0.1), radius: 5, x: 0, y: 5)
+                            .shadow(color: Color.black.opacity(0.2), radius: 5, x: 0, y: 5)
                     }
                     .padding(.horizontal, 20)
                     
                     Spacer()
                     
-                    // Botão de ação
                     Button(action: {
-                        // Ação para registrar dados
                     }) {
                         Text("Registrar Consumo de Água")
                             .font(.headline)

@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct FlorescerAppApp: App {
+struct FlorescerApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

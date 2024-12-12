@@ -13,21 +13,19 @@ struct SplashScreenView: View {
 
     var body: some View {
         ZStack {
-            // Fundo com degradê suave
             LinearGradient(gradient: Gradient(colors: [Color("yellowwTertiary"), Color("offWhite")]),
                            startPoint: .top,
                            endPoint: .bottom)
                 .ignoresSafeArea()
 
             VStack(spacing: 20) {
-                // Logo animado (Flor desabrochando)
                 ZStack {
                     Circle()
                         .fill(Color("orangeSecondary"))
                         .frame(width: 150, height: 150)
                         .shadow(color: Color("greenPrimary").opacity(0.5), radius: 10, x: 0, y: 10)
 
-                    Image(systemName: "sun.max.fill") // Simula um girassol com símbolo do sistema
+                    Image(systemName: "sun.max.fill")
                         .resizable()
                         .scaledToFit()
                         .frame(width: 100, height: 100)
@@ -36,13 +34,11 @@ struct SplashScreenView: View {
                         .animation(Animation.easeInOut(duration: 1.5).repeatForever(autoreverses: true), value: isAnimating)
                 }
 
-                // Título do app
                 Text("Florescer")
                     .font(.largeTitle)
                     .fontWeight(.semibold)
                     .foregroundColor(Color("greenPrimary"))
 
-                // Tagline
                 Text("Cultive seu bem-estar, floresça no seu tempo.")
                     .font(.headline)
                     .multilineTextAlignment(.center)
@@ -60,7 +56,7 @@ struct SplashScreenView: View {
         }
         .background(
             NavigationLink(
-                destination: OnboardingView(), // Próxima tela do app
+                destination: OnboardingView(),
                 isActive: $navigateToNextScreen,
                 label: { EmptyView() }
             )
